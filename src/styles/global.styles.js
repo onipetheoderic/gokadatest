@@ -185,7 +185,7 @@ export default StyleSheet.create({
     },
     splashContainer: {
         flex:1,
-        backgroundColor: '#02c696',
+        backgroundColor: '#00c795',
         justifyContent:'center',
     },
     positioner: {
@@ -203,6 +203,10 @@ export default StyleSheet.create({
     descriptionText: {
         fontSize:12,
         fontFamily:'Montserrat_600SemiBold_Italic'
+    },
+    descriptionText1: {
+        fontSize:10,
+        fontFamily:'Montserrat_400Regular'
     },
     descriptionText2: {
         fontSize:18,

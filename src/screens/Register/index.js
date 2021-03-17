@@ -14,7 +14,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import AuthButton from'../../components/Buttons/AuthButton'
 import FormField from '../../components/FormFields/FormField';
 import logo from '../../../assets/images/blueLogo.png';
-
+import styles from '../../styles/auth.styles';
 export default function Register(props) {
   return (
     <View style={styles.container}>
@@ -25,15 +25,15 @@ export default function Register(props) {
                 </View>
                 
             </View>
-            <LinearGradient  colors={['#02c696', 'yellow']} start={{ x: 0, y: 0 }} 
+            <LinearGradient  colors={['#02c696', '#00c795']} start={{ x: 0, y: 0 }} 
             end={{ x: 0, y: 1 }} style={styles.formParent}>
-            <View style={{paddingTop:85}}/>
+            
             <Text style={styles.tips}>Enter your valid details below</Text>
                 <FormField marginVertical={5} placeholder="Phone" secure={false} icon="phone"/>
             
                 <FormField marginVertical={5} placeholder="email" secure={false} icon="mail"/>
 
-                <FormField marginVertical={5} placeholder="email" secure={false} icon="lock"/>
+                
 
                  <FormField marginVertical={5} placeholder="Password" secure={true} icon="lock"/>
                 <AuthButton title="SIGN UP" onPress={()=>props.navigation.navigate('Dashboard')} marginVertical={10} />
@@ -51,63 +51,3 @@ export default function Register(props) {
   );
 }
 
-
-const styles = StyleSheet.create({
-    signupCont: {
-        flexDirection:'row',
-        justifyContent:'center'
-    },
-    signupCont2: {
-        marginTop:10,
-        flexDirection:'row',
-        justifyContent:'center'
-    },
-    signUpText2: {
-        fontFamily:'Montserrat_600SemiBold',
-        fontSize:13,
-        color: '#23f0c7',
-    },
-    tips: {
-      textAlign:'center',
-        fontFamily:'Montserrat_600SemiBold',
-        fontSize:13,
-        color: '#23f0c7',
-    },
-    signUpText: {
-        fontFamily:'Montserrat_400Regular',
-        fontSize:13,
-        color: '#23f0c7',
-    },
-    logoText: {
-        fontSize:40,
-        fontFamily:'Pacifico_400Regular',
-        color:'#cf1641',
-        alignSelf:'center'
-    },  
-    logoParent: {
-        flex: 1,
-        backgroundColor:'white',
-        justifyContent:'center',
-    },
-    formParent: {
-        flex: 2.9,
-        justifyContent:'center',
-        alignItems:'center',
-        flexDirection:'column',
-        backgroundColor:'yellow',
-        borderTopRightRadius:60,
-        
-    },
-    container: {
-      flex: 1,
-    backgroundColor:'white'
-    },
-    logoImage: {
-      alignSelf:'center',
-      width:212,
-    height:85,
-       
-        resizeMode: 'stretch',
-    },
-   
-  });

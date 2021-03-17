@@ -33,12 +33,23 @@ export default function Splash({navigation}) {
        <View style={styles.positioner}>
          
 
-          <Text style={styles.descriptionText}>Aim: To fullfil my Ambition of working with a prospective company like GOKADA</Text>
+          <Text style={styles.descriptionText}>Looking forward to working with Gokada</Text>
           <View style={styles.spacer10}/>
+          
+           <Text style={styles.descriptionText}>I approached it by creating the prove of concept for the following screens</Text>
+           <View style={styles.spacer10}/>
+           <Text style={styles.descriptionText1}>Splash Screen</Text>
+           <Text style={styles.descriptionText1}>Login Screen</Text>
+           <Text style={styles.descriptionText1}>Registration Screen</Text>
+           <Text style={styles.descriptionText1}>Forgot Password Screen</Text>
+           <Text style={styles.descriptionText1}>User Dashboard Listing Screen(API and Redux Activities here)</Text>
+
+         
+          
           </View>
          
       </View>
-      <View style={styles.spacer30} />
+      <View style={styles.spacer10} />
        <View style={styles.positioner}>
          
 
@@ -47,7 +58,7 @@ export default function Splash({navigation}) {
           <TouchableOpacity onPress={()=>navigation.navigate("Register")} 
           style={styles.outlineBtn}>           
             <Text style={styles.textButton}>
-             View My Test
+             Proceed
             </Text>
             <Entypo name='chevron-right' style={styles.iconStyle} size={28} />
           </TouchableOpacity>

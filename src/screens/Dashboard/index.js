@@ -32,7 +32,7 @@ export default function Dashboard({navigation}) {
   
 
      const userListing = users === undefined ? [] : users
-     console.log(userListing,"user listing")
+  
       return (
         <View style={styles.container}>
          
@@ -68,11 +68,10 @@ export default function Dashboard({navigation}) {
                 flexDirection:'column', marginTop:20, }}>
 
                   {userListing.map((user)=>{
-                    // <MenuCard key={user.id} navigation={navigation} title={user.name} icon="user" />
-                    console.log(user,"map")
+                          
                     return(
-                      <View style={{width:'95%', alignItems:'center'}}>
-<MenuCard key={user.id} navigation={navigation} email={user.email} phone={user.phone} title={user.name} icon="user" />
+                      <View  key={user.id} style={{width:'95%', alignItems:'center'}}>
+<MenuCard navigation={navigation} email={user.email} phone={user.phone} title={user.name} icon="user" />
                       </View>
                       
                     )

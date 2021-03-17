@@ -29,7 +29,7 @@ export default function Profile({navigation}) {
                 </View>
                 
             </View>
-            <LinearGradient  colors={['#02c696', 'yellow']} start={{ x: 0, y: 0 }} 
+            <LinearGradient  colors={['#02c696', '#00c795']} start={{ x: 0, y: 0 }} 
             end={{ x: 0, y: 1 }} style={styles.formParent}>
                 <View style={styles.cameraCont}>
                     <Feather name="camera" style={{color:'#23f0c7', alignSelf:'center'}} size={70} />

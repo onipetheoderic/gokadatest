@@ -4,8 +4,6 @@ import { LinearGradient } from 'expo-linear-gradient';
 
 export default function AuthButton(props) {
     
-
-  console.log("props", props)
   return (
    
         <TouchableOpacity onPress={props.onPress} style={{width:'80%',marginHorizontal:20, marginVertical:props.marginVertical, justifyContent:'center'}}>

@@ -133,7 +133,7 @@ const styles = StyleSheet.create({
   nameText: {
     fontFamily:'Montserrat_600SemiBold',
     fontSize: 16,
-    marginTop:10,
+    marginTop:30,
   },
   copyright: {
     
@@ -185,8 +185,8 @@ const styles = StyleSheet.create({
 },
  
   logoImageInParent: {
-    width:265,
-    height:105,
+    width:165,
+    height:165,
     resizeMode: 'cover',
    alignSelf:'center'
   },
@@ -196,8 +196,8 @@ const styles = StyleSheet.create({
     },
     logoImage: {
       alignSelf:'center',
-      width:212,
-    height:85,
+      width:135,
+      height:135,
        
         resizeMode: 'stretch',
     },
